@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
+// need to use dynamic import to prevent server-side rendering playroomkit functions. 'use client' not enough.
+const Experience = dynamic(() => import("../components/Experience"), {
+  ssr: false,
+});
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} w-screen h-screen overflow-hidden`}>
+        <Experience />
+        {children}
+      </body>
     </html>
   );
 }
