@@ -8,7 +8,6 @@ const Experience = () => {
     <>
       <Loader />
       <Canvas
-        camera={{ position: [2, 2, 2] }}
         className="bg-gray-900"
         onPointerDown={(e) => {
           if (e.pointerType === "mouse") {

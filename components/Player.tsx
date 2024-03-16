@@ -18,7 +18,6 @@ const keyboardMap = [
 export const Player = () => {
   const [animation, setAnimation] = useState("idle");
   const input = useInput();
-  const playerRef = useRef<any>(null);
 
   useFrame((_, delta) => {
     const controls = input.current;
@@ -37,10 +36,8 @@ export const Player = () => {
   return (
     <KeyboardControls map={keyboardMap}>
       <group position={[0, 5, 0]}>
-        <Ecctrl>
-          <group ref={playerRef}>
-            <Avatar animation={animation} />
-          </group>
+        <Ecctrl camInitDis={-1}>
+          <Avatar animation={animation} />
         </Ecctrl>
       </group>
     </KeyboardControls>
