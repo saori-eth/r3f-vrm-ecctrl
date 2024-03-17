@@ -3,8 +3,7 @@ import Ecctrl from "ecctrl";
 import { Avatar } from "./Avatar";
 import { useInput } from "@/hooks/useInput";
 import { useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
-import { Quaternion, Vector3 } from "three";
+import { useState } from "react";
 
 const keyboardMap = [
   { name: "forward", keys: ["KeyW"] },
