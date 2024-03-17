@@ -34,11 +34,9 @@ export const Player = () => {
 
   return (
     <KeyboardControls map={keyboardMap}>
-      <group position={[0, 5, 0]}>
-        <Ecctrl>
-          <Avatar animation={animation} />
-        </Ecctrl>
-      </group>
+      <Ecctrl>
+        <Avatar animation={animation} />
+      </Ecctrl>
     </KeyboardControls>
   );
 };
