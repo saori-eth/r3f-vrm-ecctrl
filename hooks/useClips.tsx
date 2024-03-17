@@ -1,3 +1,5 @@
+"use client";
+
 import { loadAnim } from "@/utils";
 import { VRM } from "@pixiv/three-vrm";
 import { useState, useEffect } from "react";

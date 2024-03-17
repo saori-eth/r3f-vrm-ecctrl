@@ -1,10 +1,10 @@
+"use client";
 import { KeyboardControls } from "@react-three/drei";
 import Ecctrl from "ecctrl";
 import { Avatar } from "./Avatar";
 import { useInput } from "@/hooks/useInput";
 import { useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
-import { Quaternion, Vector3 } from "three";
+import { useState } from "react";
 
 const keyboardMap = [
   { name: "forward", keys: ["KeyW"] },
@@ -35,11 +35,9 @@ export const Player = () => {
 
   return (
     <KeyboardControls map={keyboardMap}>
-      <group position={[0, 5, 0]}>
-        <Ecctrl>
-          <Avatar animation={animation} />
-        </Ecctrl>
-      </group>
+      <Ecctrl>
+        <Avatar animation={animation} />
+      </Ecctrl>
     </KeyboardControls>
   );
 };

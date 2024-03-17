@@ -16,6 +16,7 @@ const Experience = () => {
         }}
       >
         <World />
+        <Stats />
       </Canvas>
     </>
   );

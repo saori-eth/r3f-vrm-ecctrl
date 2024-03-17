@@ -1,3 +1,5 @@
+"use client";
+
 import { VRM, VRMLoaderPlugin, VRMUtils } from "@pixiv/three-vrm";
 import { useLoader } from "@react-three/fiber";
 import {

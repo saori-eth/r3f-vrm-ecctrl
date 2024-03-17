@@ -1,5 +1,7 @@
+"use client";
+
 import { Environment } from "@react-three/drei";
-import { Physics, RigidBody } from "@react-three/rapier";
+import { Physics } from "@react-three/rapier";
 import { Player } from "./Player";
 import { Suspense } from "react";
 import { Ground } from "./Ground";
