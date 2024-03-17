@@ -1,3 +1,4 @@
+"use client";
 import { KeyboardControls } from "@react-three/drei";
 import Ecctrl from "ecctrl";
 import { Avatar } from "./Avatar";

@@ -1,3 +1,5 @@
+"use client";
+
 import { Environment } from "@react-three/drei";
 import { Physics } from "@react-three/rapier";
 import { Player } from "./Player";

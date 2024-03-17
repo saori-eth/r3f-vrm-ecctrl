@@ -1,3 +1,5 @@
+"use client";
+
 import { RigidBody } from "@react-three/rapier";
 
 export const Ground = () => {

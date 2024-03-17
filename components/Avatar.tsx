@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useAnimations } from "@react-three/drei";
